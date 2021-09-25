@@ -1,0 +1,20 @@
+﻿using Newtonsoft.Json;
+using System.Collections.Generic;
+
+namespace AniAPIPortal.Models
+{
+    public class Data
+    {
+        [JsonProperty("current_page")]
+        public int CurrentPage { get; set; }
+
+        [JsonProperty("count")]
+        public int Count { get; set; }
+
+        [JsonProperty("documents")]
+        public List<Document> Documents { get; set; }
+
+        [JsonProperty("last_page")]
+        public int LastPage { get; set; }
+    }
+}
