@@ -9,6 +9,6 @@ namespace AniAPIPortal.Services
 {
     public interface IAniAPIService
     {
-        Task<AnimeList> GetAnimesAsync(int limit);
+        Task<AnimeList> GetAnimesAsync();
     }
 }

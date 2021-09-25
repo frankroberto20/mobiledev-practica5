@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AniAPIPortal.Models
 {
-    public class Document
+    public class Anime
     {
         [JsonProperty("anilist_id")]
         public int AnilistId { get; set; }

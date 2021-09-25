@@ -10,7 +10,7 @@ namespace AniAPIPortal.Services
 {
     public interface IAniAPI
     {
-        [Get("/v1/anime?per_page={limit}")]
-        Task<HttpResponseMessage> GetAnimesAsync(int limit);
+        [Get("/v1/anime?per_page=10")]
+        Task<HttpResponseMessage> GetAnimesAsync();
     }
 }

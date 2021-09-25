@@ -14,12 +14,11 @@ namespace AniAPIPortal.Services
         public AniAPIService()
         {
             _aniApi = RestService.For<IAniAPI>("https://api.aniapi.com");
-
         }
         public async Task<AnimeList> GetAnimesAsync()
         {
 
-            var response = await _aniApi.GetAnimesAsync(10);
+            var response = await _aniApi.GetAnimesAsync();
 
             if (response.IsSuccessStatusCode)
             {

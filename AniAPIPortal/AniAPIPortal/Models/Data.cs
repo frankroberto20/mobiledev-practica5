@@ -12,7 +12,7 @@ namespace AniAPIPortal.Models
         public int Count { get; set; }
 
         [JsonProperty("documents")]
-        public List<Document> Documents { get; set; }
+        public List<Anime> Animes { get; set; }
 
         [JsonProperty("last_page")]
         public int LastPage { get; set; }

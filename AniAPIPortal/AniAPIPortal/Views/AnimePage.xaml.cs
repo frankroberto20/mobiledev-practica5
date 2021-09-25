@@ -13,7 +13,7 @@ namespace AniAPIPortal.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AnimePage : ContentPage
     {
-        public AnimePage(Document anime)
+        public AnimePage(Anime anime)
         {
             InitializeComponent();
         }
